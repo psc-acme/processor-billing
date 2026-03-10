@@ -1,0 +1,37 @@
+{
+    "name": "psc-acme/processor-billing",
+    "description": "Package processor-billing for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProcessorBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "webmozart/assert": "^1.0",
+        "brick/date-time": "^0.7.1"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
